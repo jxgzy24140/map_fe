@@ -1,0 +1,31 @@
+@import "../../../styles/variable.less";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../../assets/images/login-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#phoneNumber:focus {
+  box-shadow: none !important;
+}
+
+#phoneNumber:focus-visible {
+  border-color: #27ae60 !important;
+}
+
+.ant-select-arrow {
+  color: #27ae60;
+}
+
+.country-code {
+}

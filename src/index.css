@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  background-color: #fff;
+  font-feature-settings: "tnum";
+  margin: 0;
+}
+.cke_dialog_tab[title="Upload"],
+.cke_dialog_tab[title="Link"] {
+  display: none !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html {
+  overflow: hidden;
+}
+#root {
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+#webpack-dev-server-client-overlay {
+  display: none !important;
+}
+
+/* Custome */
+.my-link {
+  text-decoration: none;
+  transition: color 0.3s ease; /* Hiệu ứng transition cho màu sắc trong 0.3 giây */
+}
+
+/* Màu sắc khi di chuột qua liên kết */
+.my-link:hover {
+  color: #e57905;
+}
